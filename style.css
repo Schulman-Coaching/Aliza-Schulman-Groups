@@ -207,6 +207,40 @@ body {
     margin-bottom: 20px;
 }
 
+/* Services Section Styling */
+.service-item {
+    background-color: #f8f9fa;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+    transition: box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-item h3 {
+    color: #0a1f38;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.service-item p {
+    font-size: 1.05em;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.service-item em {
+    color: #007bff;
+    font-style: italic;
+    font-weight: 500;
+}
+
 /* Aliza Specific Content Styling */
 .finances-section-aliza .fees-block,
 .finances-section-aliza .insurance-block {
