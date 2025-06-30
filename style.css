@@ -1,0 +1,417 @@
+/* Basic Reset & Box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Example font pairing from jryanfuller.com style */
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff; /* White background for main content */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* General Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 25px; /* Slightly larger buttons */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    border: none;
+}
+
+.btn-primary { /* For header "REACH OUT" */
+    background-color: #0a1f38; /* Dark blue from jryanfuller.com header */
+    color: #ffffff;
+    border: 2px solid #0a1f38;
+}
+
+.btn-primary:hover {
+    background-color: #1a3b5f; /* Darker blue on hover */
+    border-color: #1a3b5f;
+}
+
+.btn-outline { /* For hero section "REACH OUT" */
+    background-color: transparent;
+    color: #0a1f38; /* Dark blue text */
+    border: 2px solid #0a1f38;
+}
+
+.btn-outline:hover {
+    background-color: #0a1f38;
+    color: #ffffff;
+}
+
+/* Header Styling */
+.site-header {
+    background-color: #ffffff; /* White header */
+    padding: 15px 0;
+    border-bottom: 1px solid #eee; /* Subtle border */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    color: #0a1f38; /* Dark blue title */
+}
+
+.site-subtitle {
+    font-size: 0.7em;
+    font-weight: normal;
+    opacity: 0.8;
+    margin-top: 5px;
+    color: #0a1f38;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.site-nav li {
+    margin-left: 30px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #0a1f38; /* Dark blue nav links */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+    color: #007bff; /* Primary blue on hover */
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background-color: #0a1f38; /* Dark blue background */
+    color: #ffffff;
+    padding: 60px 0; /* Adjusted padding */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 55%;
+    padding-right: 40px;
+}
+
+.hero-tagline { /* Aliza's opening line */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #b0c4de; /* Lighter blue */
+}
+
+.hero-text h1 {
+    font-size: 3.2em; /* Large heading */
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.hero-description { /* Aliza's descriptive text */
+    font-size: 1.05em;
+    margin-bottom: 30px;
+    color: #e0e0e0; /* Lighter text */
+    opacity: 0.9;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 40%; /* Image takes up a bit less space */
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Shadow for image */
+}
+
+/* Logos Section Styling */
+.logos-section {
+    background-color: #ffffff; /* White background */
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logos-container img {
+    height: 35px; /* Slightly larger logos */
+    opacity: 0.7;
+    filter: grayscale(100%);
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.logos-container img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+/* General Content Section Styling */
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #0a1f38;
+}
+
+.content-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Aliza Specific Content Styling */
+.finances-section-aliza .fees-block,
+.finances-section-aliza .insurance-block {
+    background-color: #f8f9fa; /* Light grey */
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Space below blocks if they wrap */
+}
+.finances-section-aliza .finances-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.finances-section-aliza .fees-block, .finances-section-aliza .insurance-block {
+    flex: 1;
+    min-width: 280px;
+}
+.finances-section-aliza h3 {
+    color: #007bff; /* Primary blue */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+}
+.finances-section-aliza .icon-currency,
+.finances-section-aliza .icon-insurance {
+    font-size: 1.8em;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.finance-info-box {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+.finance-info-box .profile-pic-small {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.finance-info-box .box-text p {
+    font-size: 0.95em;
+    color: #444;
+    margin-bottom: 5px;
+}
+.finance-info-box .box-text p a {
+    color: #007bff;
+    text-decoration: none;
+}
+.finance-info-box .box-text p strong {
+    color: #333;
+}
+
+.qualifications-section-aliza .qualification-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+.qualifications-section-aliza .qualification-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.qualifications-section-aliza .qual-text {
+    flex-grow: 1;
+}
+.qualifications-section-aliza h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: #0a1f38;
+}
+.qualifications-section-aliza p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 3px;
+}
+.qualifications-section-aliza .stamp-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+.qualifications-section-aliza .icon-education {
+    font-size: 2.8em;
+    color: #007bff;
+    margin-right: 15px;
+    padding-top: 3px;
+}
+
+.contact-section-aliza .contact-info-box {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+.contact-section-aliza .profile-pic-small {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.contact-section-aliza .box-text p {
+    font-size: 0.95em;
+    color: #444;
+    margin-bottom: 5px;
+}
+.contact-section-aliza .box-text p a {
+    color: #007bff;
+    text-decoration: none;
+}
+.contact-section-aliza .box-text p strong {
+    color: #333;
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: #0a1f38; /* Dark blue footer */
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 60px; /* Space above footer */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .hero-text h1 {
+        font-size: 2.8em;
+    }
+    .hero-image {
+        max-width: 70%;
+    }
+    .logos-container img {
+        height: 30px;
+    }
+    .content-section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-title {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    .site-nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .site-nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 2.2em;
+    }
+    .hero-image {
+        max-width: 90%;
+    }
+    .finances-content, .finance-info-box, .contact-info-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .finance-info-box .profile-pic-small, .contact-info-box .profile-pic-small {
+        margin-bottom: 15px;
+    }
+    .finances-section-aliza .fees-block, .finances-section-aliza .insurance-block {
+        width: 100%;
+    }
+    .qualifications-section-aliza .qualification-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .qualifications-section-aliza .stamp-icon, .qualifications-section-aliza .icon-education {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
